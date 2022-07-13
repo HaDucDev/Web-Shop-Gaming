@@ -1,0 +1,29 @@
+.product-main {
+    height: auto;
+
+}
+
+.btn-click {
+    width: 100%;
+    font-size: 12px;
+
+    button {
+        font-size: 12px;
+    }
+
+    &:nth-child(1) {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .product-lll {
+        justify-content: space-around !important;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .product-lll {
+        justify-content: center !important;
+    }
+}

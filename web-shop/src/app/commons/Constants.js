@@ -1,0 +1,17 @@
+export const Constants = {
+  accessToken: "access_token",
+  userInfo: "user_info",
+  loggedIn: "loggedIn",
+  curUser: "userId",
+  editId: "editId",
+  //productId: "productId",
+  ROLE_CUSTOMER: "ROLE_CUSTOMER",
+  ROLE_SHIPPER: "ROLE_SHIPPER",
+  ROLE_ADMIN: "ROLE_ADMIN",
+  curRole: "cur_role",
+  total: "total",
+  address: "address",
+  phoneNumber: "phoneNumber",
+  payment: "payment",
+  roleId: "roleId",
+};

@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  background-color: #E8EDF1;
+  position: relative;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* img {
+  width: 100%;
+} */
+
+.app {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 62px;
+  
+
+}
+
+form{
+    background-color: white;
+    padding: 0px 60px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+h1{
+    color: rgb(77, 1, 77);
+    text-align: center;
+    margin-top: 20px;
+}
+
+button{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    background-color: #4376A6;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.app .form-auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.admin {
+  padding-left: 250px;
+  max-height: calc(100vh);
+}
+
+.admin .btn {
+  width: 150px;
+  background-color: rgb(93, 93, 93);
+}
+
+.card_product {
+  padding: 15px 20px;
+  border-radius: 15px;
+}
+
+.card-body {
+  flex: 0 !important;
+}
+
+.img_product {
+  object-fit: cover;
+}
+
+.app-footer {
+  position: relative;
+}
+
+.spinner-border{
+  margin: 0 50%;
+}

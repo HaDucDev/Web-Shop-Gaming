@@ -1,0 +1,134 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 64px;
+    width: 100vw;
+    max-width: 100%;
+    background-color: #4376A6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 80px; 
+    z-index: 1000;
+
+    &_left {
+        font-size: 30px;
+        color: whitesmoke;
+        font-weight: 700;
+    }
+
+    &_right {
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+
+        &-icon {
+            $root : &;
+            color: #000;
+            cursor: pointer ;
+            position: relative;
+            
+            &_list {
+                font-size: 16px;
+                display: none;
+                background-color: white;
+                color: black;
+                border-radius: 5px;
+                position: absolute;
+                top: 20px;
+                left: 40px;
+                min-width: 200px;
+                box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.5) ;
+                padding: 5px 0;
+
+                .mb-3{
+                    padding: 10px;
+                    min-width: 100%;
+                    
+                    &:hover {
+                        background-color: #1A4B78;
+                        color: #fff;
+
+                        .cursor-pointer{
+                            color: #fff;
+                        }
+                    }
+                }
+
+                
+            }
+
+            &:hover {
+                #{$root} {
+                    &_list {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        &_close {
+            display: none;
+        }
+    }
+
+    &_menu {
+        display: none;
+
+        &_open {
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 991px){
+    .header {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .header {
+        &_menu {
+            display: block;
+            font-size: 26px;
+            color: black;      
+            &:hover {
+                color: blue;
+            }
+        }
+        &_right {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            min-height: 100vh;
+            background-color: #fff;
+            color: #000;
+            font-size: 36px;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            visibility: hidden;
+            &_close {
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 50px;    
+                color: black;
+                font-size: 32px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+
+            &_open {
+                visibility: visible;
+            }
+        }
+    }
+}
